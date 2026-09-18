@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitiruvchi ma'lumotlari</title>
+<style>
+  :root{
+    --ink:#1f2937;
+    --label:#111827;
+    --value:#2563a8;
+    --row-alt:#f3f4f6;
+    --row-base:#ffffff;
+    --border:#e5e7eb;
+    --bg:#f6f7f9;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    padding:40px 16px;
+    background:var(--bg);
+    font-family:"Segoe UI", Tahoma, Arial, sans-serif;
+    color:var(--ink);
+  }
+  .wrap{
+    max-width:900px;
+    margin:0 auto;
+  }
+  .card{
+    background:var(--row-base);
+    border:1px solid var(--border);
+    border-radius:6px;
+    overflow:hidden;
+    margin-bottom:36px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.04);
+  }
+  h1{
+    text-align:center;
+    font-size:22px;
+    font-weight:700;
+    color:var(--label);
+    letter-spacing:0.2px;
+    margin:0 0 18px;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+  }
+  tr:nth-child(odd){ background:var(--row-alt); }
+  tr:nth-child(even){ background:var(--row-base); }
+  tr:not(:last-child) td{
+    border-bottom:1px solid var(--border);
+  }
+  td{
+    padding:14px 22px;
+    font-size:15px;
+    vertical-align:top;
+  }
+  td.label{
+    font-weight:700;
+    color:var(--label);
+    width:38%;
+    white-space:nowrap;
+  }
+  td.value{
+    color:var(--value);
+  }
+  @media (max-width:520px){
+    td{ padding:12px 14px; font-size:14px; }
+    td.label{ width:44%; white-space:normal; }
+    h1{ font-size:18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
 
+  <h1>BITIRUVCHINING SHAXSIY MA'LUMOTLARI</h1>
+  <div class="card">
+    <table>
+      <tr><td class="label">Familiya:</td><td class="value">NIGMATILLAYEV</td></tr>
+      <tr><td class="label">Ismi:</td><td class="value">DOSTON</td></tr>
+      <tr><td class="label">Pasport raqami:</td><td class="value">AC1715830</td></tr>
+      <tr><td class="label">Tug'ilgan sana:</td><td class="value">10.02.2003</td></tr>
+    </table>
+  </div>
+
+  <h1>BITIRUVCHINING TA'LIM MA'LUMOTLARI</h1>
+  <div class="card">
+    <table>
+      <tr><td class="label">OTM:</td><td class="value">Toshkent Kimyo xalqaro universiteti</td></tr>
+      <tr><td class="label">Mutaxassislik:</td><td class="value">TURIZM</td></tr>
+      <tr><td class="label">Ta'lim turi:</td><td class="value">Bakalavr</td></tr>
+      <tr><td class="label">Ta'lim shakli:</td><td class="value">Sirtqi</td></tr>
+      <tr><td class="label">Diplom raqami:</td><td class="value">B-N00017741</td></tr>
+      <tr><td class="label">Qayd sanasi:</td><td class="value">22.07.2025</td></tr>
+      <tr><td class="label">O'rtacha ball:</td><td class="value">65.60</td></tr>
+      <tr><td class="label">Diplom toifasi:</td><td class="value">Oddiy</td></tr>
+      <tr><td class="label">O'qishga kirgan yili:</td><td class="value">2021</td></tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
